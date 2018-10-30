@@ -1,0 +1,19 @@
+
+div {
+    h1 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 200px;
+        position: absolute;
+        margin-left: 30%
+    }
+    h3 {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        margin: 25% 0 0 40%;
+        font-variant-caps: all-small-caps
+    }
+    .leaf {
+        margin: random($limit: 50%);
+
+    }
+}  

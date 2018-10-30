@@ -1,14 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
+import { LeafComponent } from './leaf/leaf.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LeafComponent
   ],
   imports: [
-    BrowserModule
+    
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

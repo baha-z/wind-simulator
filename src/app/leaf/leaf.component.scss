@@ -1,0 +1,13 @@
+img {
+    position: absolute;
+    -webkit-transform: scale3d(1,.5,1) rotateZ(10deg);
+    -webkit-animation: falling 5s ease-in-out infinite;
+}
+
+@-webkit-keyframes falling {
+0%   { top:0%; left: 0%; -webkit-transform: scale3d(1,.9,1) rotateZ(30deg); }
+25%  { top: random(60%); left:90%; -webkit-transform: scale3d(1,.7,1) rotateZ(0deg); }
+50%  { top:random(20%); left: 10%; opacity: 1; -webkit-transform: scale3d(1,1,1) rotateZ(90deg); }
+75%  { top:100%; left: random(80%); opacity:0; -webkit-transform: scale3d(1,.5,1) rotateZ(0deg); }
+100% { top:10%; left: 20%; opacity:0; -webkit-transform: scale3d(1,.2,1) rotateZ(0deg);}
+}
