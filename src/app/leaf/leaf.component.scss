@@ -2,6 +2,7 @@ img {
     position: absolute;
     -webkit-transform: scale3d(1,.5,1) rotateZ(10deg);
     -webkit-animation: falling 5s ease-in-out infinite;
+    z-index: -1;
 }
 
 @-webkit-keyframes falling {

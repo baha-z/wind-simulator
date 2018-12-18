@@ -16,17 +16,25 @@ export class AppComponent implements OnInit {
     this.createLeafs();
   }
 
-  createLeafs(){
-      let margin = this.randomSize(100);
-      let padding = this.randomSize(100);
-      let size = this.randomSize(200);
-      this.randomLeafs.push(
-        {
-          height: size,
-          width: size,
-          margin: margin.toString() +'px',
-          padding: padding.toString() +'px',
-        });
+  createLeaf() {
+    const margin = this.randomSize(100);
+    const padding = this.randomSize(100);
+    const size = this.randomSize(200);
+    this.randomLeafs.push(
+      {
+        height: size,
+        width: size,
+        margin: margin.toString() + '%',
+        padding: padding.toString() + 'px',
+      });
+    console.log(this.randomLeafs);
+  }
+
+  createLeafs() {
+    const leafqty = Math.random() * (20 - 5) + 5;
+    for (let index = 0; index < leafqty; index++) {
+      this.createLeaf();
+    }
   }
 
   randomSize(max: number) {

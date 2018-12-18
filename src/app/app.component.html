@@ -1,12 +1,12 @@
 <div>
   <div *ngFor="let leaf of randomLeafs">
       <span class="leaf">
-          <app-leaf [height]= leaf.height [width]= leaf.width ></app-leaf>   
+          <app-leaf [height]= leaf.height [width]= leaf.width [padding]= leaf.padding [margin]= leaf.margin ></app-leaf>   
       </span>
   </div>
   <h1>
     {{ title }}
   </h1>
-  <h3>press f5 to get a new leaf</h3>
+  <button (click)="createLeaf()">press to get a new leaf</button>
 </div>
 
